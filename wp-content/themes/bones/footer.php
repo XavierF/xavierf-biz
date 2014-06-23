@@ -1,9 +1,11 @@
+<div class="push"></div>		
+</div><!--  end wrapper -->
 			<footer class="footer" role="contentinfo">
 
-				<div id="container-fluid" class="wrap cf">
+				<div id="container-fluid" class="cf">
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
-					<nav role="navigation">
+					<nav role="navigation" class="ftr">
 						<?php wp_nav_menu(array(
     					'container' => '',                              // remove nav container
     					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
@@ -22,13 +24,7 @@
 				</div><!-- end container-fluid -->
 
 			</footer>
-
-		</div><!--  end wrapper -->
-
-		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
-			
-		</body>
-
-	</html> <!-- end of site. what a ride! -->
+	</body>
+</html> <!-- end of site. what a ride! -->

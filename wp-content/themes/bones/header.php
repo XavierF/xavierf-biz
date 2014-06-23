@@ -36,9 +36,10 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
+		<!-- This website is dedicated to my Mom &:hearts XavierF -->
 	</head>
 <body <?php body_class(); ?>>
-	<div id="wrapper">
+	<div class="wrapper">
 
 		<div id="container-fluid cf">
 				<header class="header cf" role="banner">
@@ -64,7 +65,5 @@
 							)); ?>
 
 						</nav>
-
-				<!-- This website is dedicated to my Mom &:hearts XavierF -->
 				</header>
 		</div><!-- end .container-fluid -->

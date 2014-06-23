@@ -7,7 +7,7 @@
 						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<?php if (is_category()) { ?>
-								<h3 class="archive-title"><?php single_cat_title(); ?></h3>
+								<h1 class="archive-title"><?php single_cat_title(); ?></h1>
 
 							<?php } elseif (is_tag()) { ?>
 								<h1 class="archive-title">
@@ -38,27 +38,26 @@
 										<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
 									</h1>
 							<?php } ?>
-
+							<div class="accordion">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<header class="article-header">
 
-									<h3 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+									<h2 class="entry-title"><a href="<?php the_ID(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									
 
 								</header>
 
-								<section class="entry-content cf">
+								<section class="entry-content cf" id="post-<?php the_ID(); ?>">
 
 									<?php the_content(); ?>
 
 								</section>
 
 								<footer class="article-footer">
-<p class="byline vcard">Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?></p>
-
+										<p class="byline vcard">Posted on <?php the_time('F jS, Y') ?> by <?php the_author() ?></p>
 								</footer>
 
 							</article>
@@ -82,7 +81,7 @@
 									</article>
 
 							<?php endif; ?>
-
+						</div><!-- end .accordion -->
 						</div>
 
 					<?php get_sidebar(); ?>

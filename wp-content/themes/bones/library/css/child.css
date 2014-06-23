@@ -1,19 +1,29 @@
 body, html {
+  height: 100%;
   background: white;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; }
   body a, html a {
-    color: white; }
+    color: #323944; }
+    body a:link, html a:link {
+      color: #323944; }
+    body a:visited, html a:visited {
+      color: #323944; }
+    body a:hover, html a:hover {
+      color: #323944; }
 
-#wrapper {
-  height: auto !important; }
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  margin-bottom: -80px !important; }
 
 .header {
   padding: 0 20px;
   background-color: white;
-  border-bottom: 1px solid lightgray;
   height: 45px; }
 
 a.brand {
@@ -22,36 +32,40 @@ a.brand {
   font-size: 0.9em;
   color: #323944;
   text-decoration: none;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: antialiased; }
   a.brand:hover {
     color: #323944; }
 
 nav {
   display: inline-block;
-  margin-left: 40px; }
+  margin-left: 0%;
+  margin-right: 0%; }
 
-.nav li a {
-  font-size: 0.9em;
-  color: #323944;
-  padding: 10px 20px;
-  -webkit-font-smoothing: antialiased; }
-  .nav li a:hover {
+.nav li {
+  display: inline-block; }
+  .nav li a {
+    display: inline-block;
+    font-size: 0.9em;
     color: #323944;
-    text-decoration: none; }
+    padding: 10px 20px;
+    -webkit-font-smoothing: antialiased; }
+    .nav li a:hover {
+      color: #323944;
+      text-decoration: none; }
 
 .site-tagline {
   font-size: 0.9em;
   float: right;
+  margin: 10px;
   display: inline-block;
   color: #323944;
   -webkit-font-smoothing: antialiased; }
 
-#content {
-  height: 100%; }
-
 .entry-content {
   padding: 10px 0; }
+  .entry-content a {
+    float: left; }
 
 .home {
   border: 0; }
@@ -64,6 +78,51 @@ nav {
   border-left: 0;
   border-right: 0;
   border-top: 0; }
+  .hentry:last-child {
+    border-bottom: 0; }
+
+.accordion {
+  width: 100%;
+  height: auto; }
+  .accordion article {
+    width: 100%;
+    height: auto; }
+    .accordion article:target section {
+      display: block; }
+      .accordion article:target section p {
+        display: block; }
+    .accordion article:hover {
+      background: white; }
+      .accordion article:hover .article-header h2 {
+        width: 100%; }
+        .accordion article:hover .article-header h2 a {
+          color: #333333; }
+
+.accordion article {
+  float: left;
+  overflow: hidden;
+  cursor: pointer; }
+  .accordion article:hover {
+    background: lightgray; }
+  .accordion article section {
+    display: none; }
+
+.accordion article section {
+  width: 100%;
+  height: auto;
+  -webkit-transition: height 0.2s ease-out;
+  -moz-transition: height 0.2s ease-out;
+  -o-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-outs; }
+
+.accordion:target {
+  height: auto;
+  width: 100%; }
+
+.accordion article .article-header h2 {
+  position: relative;
+  left: 0;
+  top: 0; }
 
 .article-header h3 a {
   color: #323944; }
@@ -75,10 +134,92 @@ nav {
 .byline {
   font-size: 0.7em; }
 
+.sidebar {
+  margin: 0; }
+
+.widget {
+  margin: 0; }
+  .widget li a {
+    color: lightgray; }
+    .widget li a:visited {
+      color: lightgray; }
+    .widget li a:hover {
+      color: lightgray; }
+
+.widgettitle {
+  border-bottom: 1px solid lightgray; }
+
+.form-allowed-tags {
+  display: none; }
+
+.wpcf7-form p {
+  width: 100%;
+  float: left; }
+
+.wpcf7-form-control input {
+  float: left;
+  display: block;
+  background: #323944; }
+
+.push {
+  height: 0;
+  float: left; }
+
 .footer {
-  position: relative;
-  height: 50px; }
+  height: 80px;
+  padding: 25px 20px 0; }
 
 .source-org {
   margin: 10px 0;
-  float: left; }
+  float: left;
+  display: inline-block;
+  font-size: 0.8em; }
+
+.ftr {
+  float: right; }
+
+.footer-nav li {
+  display: inline-block; }
+  .footer-nav li a {
+    display: inline-block;
+    font-size: 0.8em;
+    color: white;
+    padding: 10px 20px;
+    -webkit-font-smoothing: antialiased; }
+    .footer-nav li a:hover {
+      color: white;
+      text-decoration: none; }
+
+@media screen and (min-width: 1024px) {
+  .d-5of7 {
+    padding: 0 80px 0 0;
+    height: auto; } }
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0 20px;
+    background-color: white;
+    height: 45px; }
+
+  a.brand {
+    float: left;
+    display: inline-block;
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 10px 0; }
+
+  nav {
+    display: block;
+    float: left; }
+
+  .nav li {
+    display: inline-block; }
+    .nav li a {
+      display: block;
+      font-size: 0.9em;
+      padding: 10px 10px 0 0; }
+
+  .site-tagline {
+    font-size: 0.9em;
+    float: right;
+    margin: 10px 0;
+    display: inline-block; } }
