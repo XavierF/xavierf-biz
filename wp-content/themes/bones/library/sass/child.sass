@@ -13,7 +13,6 @@ body, html
 	font-size: 16px
 	font-weight: normal
 	-webkit-font-smoothing: antialiased
-
 	a
 		color: #323944
 		&:link
@@ -22,6 +21,15 @@ body, html
 			color: #323944
 		&:hover
 			color: #323944
+	.home
+		background: white
+		background: url('../images/sfmoma.jpg') center center no-repeat 
+		background-size: cover
+		background-opacity: 0.2
+		.header
+			background-color: rgba(255, 255, 255, .8)
+		.page
+			background: transparent
 
 .wrapper
 	min-height: 100%
@@ -37,10 +45,14 @@ body, html
 	background-color: white
 	height: 45px
 
-a.brand
+.brand
 	float: left
 	display: inline-block
 	font-size: .9em
+	// width: 60px
+	// height: 60px
+	//background: url('../library/images/xfbiz-header.png') center 14px no-repeat
+	// background-size: 36px 36px
 	color: #323944
 	text-decoration: none
 	padding: 10px
@@ -78,6 +90,7 @@ nav
 
 .entry-content
 	padding: 10px 0
+	background: transparent
 	a
 		float: left
 .home
@@ -92,75 +105,22 @@ nav
 	border-top: 0
 	&:last-child
 		border-bottom: 0
-
-// Style of open slide
-.accordion
-	width: 100%
-	height: auto
-	article
-		width: 100%
-		height: auto
-		&:target
-			section
-				display: block
-				p
-					display: block 
-		&:hover 
-			background: #FFF
-			.article-header
-				h2 
-					width: 100%
-					a
-						color: #333
-		  
-
-// style of closed slide
-.accordion
-	article
-		float: left
-		overflow: hidden
-		cursor: pointer
-		&:hover 
-			background: lightGrey
-	
-		section
-			display: none 
-
-	
-.accordion 
-	article
-		section
-			width: 100% 
-			height: auto
-			-webkit-transition: height 0.2s ease-out
-			-moz-transition: height 0.2s ease-out
-			-o-transition: height 0.2s ease-out
-			transition: height 0.2s ease-outs
-
-.accordion 
-	&:target 
-		height: auto
-		width: 100%
-.accordion 
-	article 
-		.article-header
-			h2
-				position: relative 
-				left: 0 
-				top: 0
-
-
-
+.archive-title
+	margin: 0 0 26px 0
 .article-header
-	h3
+	h2
 		a
 			color: #323944
+			&:hover
+				color: lighten(#323944, 30%)
 
 .article-footer, .hentry footer
 	padding: 10px 0
 	border: 0
 .byline
 	font-size: .7em
+
+// SIDEBAR
 .sidebar
 	margin: 0
 .widget
@@ -174,6 +134,19 @@ nav
 				color: lightGrey	
 .widgettitle
 	border-bottom: 1px solid lightGrey
+
+.widget_calendar
+	text-align: center
+	#wp-calendar
+		width: 100%
+	#prev
+		padding-top: 10px
+		text-align: left
+	#next
+		padding-top: 10px
+		text-align: right
+	caption
+		margin: 0 auto
 
 .form-allowed-tags
 	display: none
@@ -226,8 +199,8 @@ nav
 	.d-5of7
 		padding: 0 80px 0 0
 		height: auto
-
-@media screen and (max-width: 480px)
+// 
+@media screen and (max-width: 568px)
 	.header
 		padding: 0 20px
 		background-color: white
@@ -257,5 +230,53 @@ nav
 		float: right
 		margin: 10px 0
 		display: inline-block
+
+	.m-all
+		padding-right: 0
+
+	.archive-title
+		text-align: center
+		font-size: 1.6em
+		margin: 10px 0
+		h1
+			font-size: 1.6em
+
+
+	.post
+		margin-bottom: 10px
+
+	.article-header
+		text-align: center
+		h2
+			font-size: 1.2em !important
+			a
+				font-size: 1.2em !important
+
+	.widget
+		text-align: center
+
+	.footer
+		height: auto
+		text-align: center !important
+		padding-bottom: 10px
+	.source-org
+		margin: 0 auto
+		float: none
+		display: block
+	.ftr
+		float: none
+		margin: 0 auto
+	.footer-nav
+		margin-left: 0
+		margin-right: 0
+		text-align: center
+		li
+			display: block
+			float: left
+			width: 100%
+			a
+				display: block !important
+				margin: 0 auto !important
+
 
 	

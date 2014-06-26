@@ -1,9 +1,9 @@
 <div class="push"></div>		
 </div><!--  end wrapper -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer cf" role="contentinfo">
 
 				<div id="container-fluid" class="cf">
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 
 					<nav role="navigation" class="ftr">
 						<?php wp_nav_menu(array(

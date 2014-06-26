@@ -44,7 +44,6 @@
 		<div id="container-fluid cf">
 				<header class="header cf" role="banner">
 
-						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 						<a class="brand" href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
 
 						<p class="site-tagline"><?php bloginfo('description'); ?></p>

@@ -13,6 +13,15 @@ body, html {
       color: #323944; }
     body a:hover, html a:hover {
       color: #323944; }
+  body .home, html .home {
+    background: white;
+    background: url("../images/sfmoma.jpg") center center no-repeat;
+    background-size: cover;
+    background-opacity: 0.2; }
+    body .home .header, html .home .header {
+      background-color: rgba(255, 255, 255, 0.8); }
+    body .home .page, html .home .page {
+      background: transparent; }
 
 .wrapper {
   min-height: 100%;
@@ -26,7 +35,7 @@ body, html {
   background-color: white;
   height: 45px; }
 
-a.brand {
+.brand {
   float: left;
   display: inline-block;
   font-size: 0.9em;
@@ -34,7 +43,7 @@ a.brand {
   text-decoration: none;
   padding: 10px;
   -webkit-font-smoothing: antialiased; }
-  a.brand:hover {
+  .brand:hover {
     color: #323944; }
 
 nav {
@@ -63,7 +72,8 @@ nav {
   -webkit-font-smoothing: antialiased; }
 
 .entry-content {
-  padding: 10px 0; }
+  padding: 10px 0;
+  background: transparent; }
   .entry-content a {
     float: left; }
 
@@ -81,51 +91,13 @@ nav {
   .hentry:last-child {
     border-bottom: 0; }
 
-.accordion {
-  width: 100%;
-  height: auto; }
-  .accordion article {
-    width: 100%;
-    height: auto; }
-    .accordion article:target section {
-      display: block; }
-      .accordion article:target section p {
-        display: block; }
-    .accordion article:hover {
-      background: white; }
-      .accordion article:hover .article-header h2 {
-        width: 100%; }
-        .accordion article:hover .article-header h2 a {
-          color: #333333; }
+.archive-title {
+  margin: 0 0 26px 0; }
 
-.accordion article {
-  float: left;
-  overflow: hidden;
-  cursor: pointer; }
-  .accordion article:hover {
-    background: lightgray; }
-  .accordion article section {
-    display: none; }
-
-.accordion article section {
-  width: 100%;
-  height: auto;
-  -webkit-transition: height 0.2s ease-out;
-  -moz-transition: height 0.2s ease-out;
-  -o-transition: height 0.2s ease-out;
-  transition: height 0.2s ease-outs; }
-
-.accordion:target {
-  height: auto;
-  width: 100%; }
-
-.accordion article .article-header h2 {
-  position: relative;
-  left: 0;
-  top: 0; }
-
-.article-header h3 a {
+.article-header h2 a {
   color: #323944; }
+  .article-header h2 a:hover {
+    color: #75839a; }
 
 .article-footer, .hentry footer {
   padding: 10px 0;
@@ -148,6 +120,19 @@ nav {
 
 .widgettitle {
   border-bottom: 1px solid lightgray; }
+
+.widget_calendar {
+  text-align: center; }
+  .widget_calendar #wp-calendar {
+    width: 100%; }
+  .widget_calendar #prev {
+    padding-top: 10px;
+    text-align: left; }
+  .widget_calendar #next {
+    padding-top: 10px;
+    text-align: right; }
+  .widget_calendar caption {
+    margin: 0 auto; }
 
 .form-allowed-tags {
   display: none; }
@@ -194,7 +179,7 @@ nav {
   .d-5of7 {
     padding: 0 80px 0 0;
     height: auto; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
   .header {
     padding: 0 20px;
     background-color: white;
@@ -222,4 +207,53 @@ nav {
     font-size: 0.9em;
     float: right;
     margin: 10px 0;
-    display: inline-block; } }
+    display: inline-block; }
+
+  .m-all {
+    padding-right: 0; }
+
+  .archive-title {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 10px 0; }
+    .archive-title h1 {
+      font-size: 1.6em; }
+
+  .post {
+    margin-bottom: 10px; }
+
+  .article-header {
+    text-align: center; }
+    .article-header h2 {
+      font-size: 1.2em !important; }
+      .article-header h2 a {
+        font-size: 1.2em !important; }
+
+  .widget {
+    text-align: center; }
+
+  .footer {
+    height: auto;
+    text-align: center !important;
+    padding-bottom: 10px; }
+
+  .source-org {
+    margin: 0 auto;
+    float: none;
+    display: block; }
+
+  .ftr {
+    float: none;
+    margin: 0 auto; }
+
+  .footer-nav {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center; }
+    .footer-nav li {
+      display: block;
+      float: left;
+      width: 100%; }
+      .footer-nav li a {
+        display: block !important;
+        margin: 0 auto !important; } }

@@ -38,19 +38,19 @@
 										<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
 									</h1>
 							<?php } ?>
-							<div class="accordion">
+
+						
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<header class="article-header">
 
-									<h2 class="entry-title"><a href="<?php the_ID(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+									<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 									
-
 								</header>
 
-								<section class="entry-content cf" id="post-<?php the_ID(); ?>">
+								<section class="entry-content cf">
 
 									<?php the_content(); ?>
 
@@ -81,7 +81,7 @@
 									</article>
 
 							<?php endif; ?>
-						</div><!-- end .accordion -->
+		
 						</div>
 
 					<?php get_sidebar(); ?>
