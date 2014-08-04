@@ -9,7 +9,6 @@
  * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
-
 <?php get_header(); ?>
 
 			<div id="content">
@@ -44,13 +43,11 @@
 
 							<?php endif; ?>
 
-						</div>
+						</div><!-- end main -->
 
-					
+				</div><!-- end inner-content -->
 
-				</div>
-
-			</div>
+			</div><!-- end content -->
 
 
 <?php get_footer(); ?>

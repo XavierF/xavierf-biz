@@ -1,7 +1,7 @@
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
-Site Name:
-Author:
+Site Name: XavierF.Biz
+Author: Xavier F
 
 Stylesheet: Main Stylesheet
 
@@ -848,8 +848,6 @@ I mean, you can do whatever you want. The world is your oyster. Unless
 you hate oysters, then the world is your peanut butter & jelly sandwich.
 *********************/
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Alert Styles
 
@@ -879,9 +877,6 @@ you can just remove this stylesheet.
   background: #e6efc2; }
 
 /******************************************************************
-Site Name:
-Author:
-
 Stylesheet: Button Styles
 
 Buttons are a pretty important part of your site's style, so it's
@@ -1226,8 +1221,6 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1396,9 +1389,10 @@ and more scalable.
       */ }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
-      padding-left: 30px; }
+      padding-left: 30px; 
+}
+/*--------------------------------------------------------------------------------- end .nav */
 
-/* end .nav */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1528,51 +1522,6 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0; }
-
-.pagination {
-  text-align: center; }
-  .pagination ul {
-    display: inline-block;
-    background-color: white;
-    white-space: nowrap;
-    padding: 0;
-    clear: both;
-    border-radius: 3px; }
-  .pagination li {
-    padding: 0;
-    margin: 0;
-    float: left;
-    display: inline;
-    overflow: hidden;
-    border-right: 1px solid #eaedf2; }
-  .pagination a, .pagination span {
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    line-height: 1em;
-    font-size: 1em;
-    font-weight: normal;
-    padding: 0.75em;
-    min-width: 1em;
-    display: block;
-    color: #2980b9; }
-    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
-      color: white; }
-  .pagination .current {
-    cursor: default;
-    color: #5c6b80; }
-    .pagination .current:hover, .pagination .current:focus {
-      background-color: white;
-      color: #5c6b80; }
-
-/* end .bones_page_navi */
 /* fallback previous & next links */
 .wp-prev-next .prev-link {
   float: left; }

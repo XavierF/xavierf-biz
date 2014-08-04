@@ -24,7 +24,18 @@
 				</div><!-- end container-fluid -->
 
 			</footer>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<?php wp_footer(); ?>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#menu-mainmenu').slicknav({
+					label: '',
+					easingOpen: 'swing',
+					easingClose: 'swing'
+				});
+			});
+			</script>
 
 	</body>
 </html> <!-- end of site. what a ride! -->
