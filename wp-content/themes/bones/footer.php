@@ -34,6 +34,14 @@
 					easingOpen: 'swing',
 					easingClose: 'swing'
 				});
+				$('.slides').slick({
+				autoplay: true,
+				dots: true,
+				fade: true,
+				autoplaySpeed: 6000,
+				speed: 5000,
+  		swipe: true	
+				});
 			});
 			</script>
 
