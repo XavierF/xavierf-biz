@@ -1,4 +1,4 @@
-//BRAND COLORS
+//BRAND COLORS XAVIERF.BIZ
 $lightGrey: #3B3B3B
 $darkGrey: #323944
 $white: #FFFFFF
@@ -27,6 +27,7 @@ body, html
 		.header
 			background-color: rgba(255, 255, 255, .7)
 		a.brand
+			color: $skyBlue !important
 			&:hover
 				color: white !important
 		.nav
@@ -52,6 +53,8 @@ body, html
 				&:first-child
 					margin: 2px 0
 					padding: 5px 0
+		.site-tagline
+			color: $skyBlue
 		.page
 			background: transparent
 			position: absolute
@@ -73,7 +76,8 @@ body, html
 // Header
 .header
 	padding: 0 20px
-	background-color: white
+	background-color: rgba($skyBlue, .7)
+	border-bottom: 1px solid rgba($skyBlue, .9)
 	height: 45px
 	position: fixed
 	top: 0
@@ -88,7 +92,7 @@ body, html
 	// height: 60px
 	//background: url('../library/images/xfbiz-header.png') center 14px no-repeat
 	// background-size: 36px 36px
-	color: $skyBlue !important
+	color: white !important
 	text-decoration: none
 	padding: 10px 0 
 	-webkit-font-smoothing: antialiased
@@ -100,7 +104,7 @@ body, html
 	float: right
 	margin: 10px 0
 	display: inline-block
-	color: $skyBlue
+	color: white
 	-webkit-font-smoothing: antialiased
 
 .nav-container
@@ -113,7 +117,7 @@ body, html
 		display: inline-block
 		a
 			font-size: .9em
-			color: $skyBlue
+			color: white
 			padding: 10px 20px
 			-webkit-font-smoothing: antialiased
 			&:hover
@@ -689,7 +693,6 @@ body, html
 @media screen and (max-width: 568px)
 	.header
 		padding: 0 20px
-		background-color: white
 		height: 45px
 	a.brand
 		float: left
@@ -698,6 +701,7 @@ body, html
 		text-decoration: none
 		padding: 10px 0  
 	.site-tagline
+
 		font-size: .9em
 		float: right
 		margin: 10px 0
@@ -705,6 +709,7 @@ body, html
 	.home
 		.entry-content
 			margin-top: 0
+			padding-top: 0
 		.page
 			position: absolute
 			top: 75px !important
@@ -724,9 +729,10 @@ body, html
 			font-size: .5em
 
 	.slick-prev, .slick-next
-		top: 55%r
+		top: 55%
+
 	.slick-dots 
-		bottom: -22%
+		bottom: -30%
 		li
 			height: 15px
 			width: 15px
@@ -734,8 +740,6 @@ body, html
 			button
 				&:before
 					font-size: .6em
-		
-
 	.m-all
 		padding-right: 0
 
@@ -757,10 +761,15 @@ body, html
 	.widget
 		text-align: center
 
+	.wrapper
+		height: 0 !important
+		min-height: auto !important
+		margin-bottom: 0 !important
+
 	.footer
 		height: auto
 		text-align: center !important
-		padding-bottom: 10px
+		margin: 20px 0
 	.source-org
 		margin: 0 auto
 		float: none
@@ -780,12 +789,41 @@ body, html
 				display: block !important
 				margin: 0 auto !important
 
-	@media screen and (max-width: 568px) and (orientation : landscape)
-		.home
-			.page
-				top: 93px !important
-		.slick-prev, .slick-next
-			top: 45%
+
+@media screen and (max-width: 568px) and (orientation : portrait)
+
+	.slick-dots 
+		bottom: -30%
+		li
+			height: 15px
+			width: 15px
+			margin: 0px 17px
+	.wrapper
+		height: auto !important
+		min-height: 0 !important
+		margin-bottom: 0 !important
+	
+
+
+@media screen and (max-width: 568px) and (orientation : landscape)
+	.home
+		.page
+			top: 93px !important
+	.slick-prev, .slick-next
+		top: 45%
+
+	.slick-dots 
+		background: darken($skyBlue, 15%)
+		bottom: -25%
+		li
+			height: 15px
+			width: 15px
+			margin: 0px 17px
+	.wrapper
+		height: 100% !important
+		min-height: 0 !important
+		margin-bottom: -3px !important
+		
 
 
 

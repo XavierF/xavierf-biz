@@ -31,12 +31,21 @@
 		<?php // end of wordpress head ?>
 
 		<?php // drop Google Analytics Here ?>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-52330851-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 		<?php // end analytics ?>
 		<!-- This website is dedicated to my Mom &:hearts XavierF -->
 	</head>
 <body <?php body_class(); ?>>
 	<div class="wrapper">
-		<div id="container-fluid cf">
+		<div class="container-fluid cf">
 				<header class="header cf" role="banner">
 						<a class="brand" href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
 							<nav role="navigation" class="nav-container">

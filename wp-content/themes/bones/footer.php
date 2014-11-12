@@ -2,7 +2,7 @@
 </div><!--  end wrapper -->
 			<footer class="footer cf" role="contentinfo">
 
-				<div id="container-fluid" class="cf">
+				<div class="container-fluid cf">
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
 
 					<nav role="navigation" class="ftr">
@@ -24,7 +24,7 @@
 				</div><!-- end container-fluid -->
 
 			</footer>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 		<?php wp_footer(); ?>
 		
 		<script type="text/javascript">
@@ -35,7 +35,7 @@
 					easingClose: 'swing'
 				});
 				$('.slides').slick({
-				autoplay: true,
+				autoplay: false,
 				dots: true,
 				fade: true,
 				autoplaySpeed: 6000,
