@@ -1,6 +1,6 @@
 xavierf-biz
 ===========
 
-wordpress bootstrap 3 project
+wordpress project
 
-A responsive mobile ready wordpress theme using bootstrap 3
+A responsive mobile ready wordpress theme 
